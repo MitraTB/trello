@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.background{
+    width: 100%;
+    height:42.5rem; 
+    background-color:#0079bf;
+}
+
+.container{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.header{
+    width: 100%;
+    height: 70px;
+    
+}
+
+
+.logo img{
+    width: 8.125rem;
+    height: 50px;
+    float: left;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.registration ul li{
+    list-style: none;
+    display: inline;
+}
+.registration{
+    float: right;
+    padding: 0.5rem 1rem;
+    margin-top: 0.7rem;
+}
+.login a {
+    margin-right:1rem ;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.login:hover{
+text-decoration: underline;
+}
+.signup a{
+    color:#3498db;
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.row{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 2rem;
+    flex-wrap:nowrap;
+
+}
+
+
+.column1{
+margin-right: 3rem;
+flex: 1 1 50%;
+}
+
+h1{
+    color: white;
+    font-size: 45px;
+    margin: 1rem 1rem 1rem 0;
+    height: auto;
+    font-weight: bold;
+    line-height:1.2 ;
+}
+
+h2{
+    color: white;
+    font-size: 25px;
+    margin-top: 2rem;
+    line-height: 1.2;
+}
+.column2{
+    flex: 1 1 50%;
+    margin-left: 2rem;
+}
+.column2 img{
+    
+    width: 100%;
+    height: auto;
+}
+
+.form-signup{
+    margin-top: 3rem;
+}
+
+.email{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 23.5rem;
+    height: 55px;
+    border: none;
+
+}
+
+.btn-signup{
+border-radius: 0.5rem;
+width: 16.52rem;
+height: 55px;
+background-color: #61BD4F;
+color: white;
+margin-left: 0.5rem;
+font-size: 1.56rem;
+font-weight: 300;
+border: none;
+}
+
+@media all and (max-width:1000px){
+.column1, .column2, .form-signup {
+flex: 1 1 100%;
+}
+.background{
+    height: auto;
+
+}
+
+.column2{
+    margin-left:0;
+}
+.row{
+flex-wrap: wrap;
+}
+
+}
+
+
+@media all and (max-width:650px){
+    .btn-signup{
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
